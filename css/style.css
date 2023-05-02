@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.nav-style{
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(138,155,165,0.15);
+}
+
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-nav li a {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 14px;
+    position: relative;  /* For decoration underline */
+}
+
+.navbar-nav li a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #ff7320;
+    transition: all 0.5s linear;
+}
+
+.navbar-nav li a:hover::before {   /* Advance hover effect */
+   width: 80%;
+}
+
+/* .navbar-nav li a:hover {
+    color: rgb(80, 144, 165);
+} */
+
+.navbar-nav li .active {
+    color: #ff7320 !important;
+}
+
+/* Main header section starts from here */
+
+.header_text{
+    font-size: 2rem;
+}
+.span_header_text {
+    color: #ff7320;
+}
+
+.header_btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_btn button{
+    margin-top: 5%;
+    padding: 1% 4%;
+    background-color: transparent;
+    color: #ff7320;
+    border: 1px solid #ff7320;
+    font-size: 1.2rem;
+}
+
+.header_btn button i {
+    margin-right: 6px;
+    font-size: 1.2rem;
+}
+
+.header_btn button:hover {
+    background-color: #ff7320;
+    color: white;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+.header_mail p:nth-child(2) {
+    margin-top: -20px;
+}
+
+/* About section starts form here */
+
+.about-sec {
+    padding-top: 50px;
+}
+
+.main_title h1{
+    font-size: 3.5rem;
+    color: #000;
+}
+
+.about_text h3{
+    font-size: 2rem;
+    color: #000;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.about_text p{
+    font-size: 20px;
+}
+
+/* Expert section starts here */
+
+.main_title p {
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 4%;
+}
+
+.expertise-sec .progress {
+    width: 90%;
+    height: 10px;
+    border-radius: 7px;
+}
+
+.expertise-sec .pb_1 {
+    width: 93%;
+    background-color: #ea2148;
+    border-radius: 7px;
+}
+
+.expertise-sec .pb_2 {
+    width: 83%;
+    background-color: orange;
+    border-radius: 7px;
+}
+
+.expertise-sec .pb_3 {
+    width: 88%;
+    background-color: #1c9588;
+    border-radius: 7px;
+}
+
+.expertise-sec h3 {
+    position: relative;
+}
+
+.expert_h1::after {
+    content: '93%';
+    position: absolute;
+    right: 13%;
+    top: 10px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.expert_h2::after {
+    content: '83%';
+    position: absolute;
+    right: 13%;
+    top: 10px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.expert_h3::after {
+    content: '88%';
+    position: absolute;
+    right: 13%;
+    top: 10px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Services section starts from here */
+
+.services_sec {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.services_div {
+    background-color: #f6f6f6;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(138,155,165,0.15);
+}
+
+.services_div:hover {
+    background: #fff;
+    box-shadow: 0 0 4px 1px grey;
+    cursor: text;
+}
+
+.services_div h2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ffeee6;
+    font-size: 52px;
+    position: relative;
+    margin: auto;
+    color: #ff7320;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.services_div h2:hover {
+    background-color: #fff;
+    border: 1px solid #ff7320;
+}
+
+.services_div ul li {
+    list-style: none;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+.heart {
+    color: #fff;
+}
+
+.services_div:hover .heart {
+    color: #ff7320;
+}
+
+/* Hire me section */
+
+.hireme_section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/parallel.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hireme_section h1 {
+    font-size: 35px;
+    color: #ff7320;
+}
+
+.hireme_section p {
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.hireme_section h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+
+.hire_me{
+    margin-top: 0;
+    padding: 0.5% 3%;
+    color: white;
+    background-color: #ff7320;
+    border: 1px solid #ff7320;
+    font-size: 1.2rem;
+}
+
+.hire_me i {
+    margin-right: 6px;
+    font-size: 1rem;
+}
+
+.hire_me:hover {
+    background-color: white;
+    color: #ff7320;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+.contact_inner, .contact_img{
+    margin-top: -40px;
+}
+
+.contact_sec {
+    padding-bottom: 50px;
+}
+
+/* Social links */
+
+.social_links {
+    margin-bottom: 20px;
+}
+
+.social_links .facebook:hover {
+    color: #3b5998;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.social_links .instagram:hover {
+    color: #e4405f;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.social_links .twitter:hover {
+    color: #00B6F1;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.social_links .pinterest:hover {
+    color: #bd081c;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.social_links .behance:hover {
+    color: #053eff ;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+footer {
+    height: 40px;
+    width: 100%;
+    margin: auto;
+}
+
+/* For responsiveness */
+
+@media (max-width:992px) {
+    .navbar-nav {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .navbar-nav li a::before {
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        right: 100%;
+        left: 45%;
+    }
+    .navbar-nav li a:hover::before {
+        width: 10%;
+     }
+
+     /* About me section responseveness */
+
+     .main_title h1 {
+        font-size: 2.5rem;
+     }
+
+     .main_title p {
+        font-size: 17px;
+     }
+
+     .about_text h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+     }
+
+     .about_text{
+        margin-top: 30px;
+     }
+
+     .hireme_section h1 {
+        font-size: 25px;
+        }
+
+        .hireme_section p {
+            font-size: 20px;
+        }
+
+        .hireme_section h3 {
+            font-size: 20px;
+        }
+     /*  */
+}
+
+/* Mail section */
+
+.mail {
+    padding: 3% 0;
+    transition: all 0.3s linear;
+}
+
+.mail:hover .bxl-gmail {
+    color: #ff7320;
+}
+
+.mail:hover .bxl-whatsapp{
+    color: #ff7320;
+}
+
+.mail:hover .bxs-map{
+    color: #ff7320;
+}
+
+
+@media (max-width:1035px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
+    }
+
+    .about_text {
+        margin-left: auto;
+    }
+
+}
